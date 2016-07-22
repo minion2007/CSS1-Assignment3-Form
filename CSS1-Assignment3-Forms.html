@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+<style>
+  fieldset {
+    width:400px;
+    background-color:#27B541;
+    border-radius:10px;}
+
+ .buy{
+    padding:5px 5px;
+    align:center;
+    display:inline-block;
+    border-radius:10px;
+    cursor:pointer;}
+ 
+  .input{
+    width:300px;
+    border-radius:5px;}
+    
+  body{
+    background:url("green-background.jpg")no-repeat;
+    background-size:500px 900px;}
+   
+</style>
+</head>
+<body>
+
+  <form >
+   <h4>Step1:Your details</h4>
+
+        <fieldset class:"fieldset">
+
+           <label for="name"> Name:</label>
+           <input type="text" id="name" class="input" placeholder="First and last name"> </fieldset>
+
+        <fieldset class:fieldset">
+           <label for="Email"> Email:</label>
+           <input type="email" id="email" class="input" placeholder="example@domain.com"></fieldset>
+
+        <fieldset class="fieldset">
+            <label for="phone">Phone:</label>
+            <input type="phone" id="phone" class="input" placeholder="e.g.+44750000000"></fieldset>
+
+    <h4>Step2:Delivery address</h4>
+
+        <fieldset class:"fieldset">
+           <label for="address">Address:</label>
+           <input type="textarea" id="address" class="input">
+        </fieldset>
+
+        <fieldset class="fieldset">
+           <label for="post code">Post code:</label>
+           <input type="text" id="postcode" class="input"></fieldset>
+
+        <fieldset class="fieldset">
+           <label for="country">Country:</label>
+           <input type="text" id="country" class="input">
+        </fieldset>
+		
+    <h4>Step3:Card details</h4>
+	
+        <fieldset>
+           <label for="Card type">Card type</label>
+           <label for="VISA" class="cardType" ></label>
+           <input id="card" type="radio" value="VISA" name="card"><img src="visa_logo.jpg" alt="visa" width="10px" height="10px"/>VISA</label>
+           <label for="AmEx" class="cardType">
+           <input id="card" type="radio" value="AmEx" name="card"><img src="amexLogo.png" alt="visa" width="10px" height="10px">AmEx</label>
+           <label for="MasterCard" class="cardType">
+           <input id="card" type="radio" value="MasterCard" name="card"><img src="mastercard.png" alt="visa" width="10px height="10px"/>MasterCard</label> 
+        </fieldset>
+
+        <fieldset class="fieldset">
+           <label for" Card number">Card number</label>
+           <input type"number" id="cardnumber" class="input">
+		</fieldset>
+
+        <fieldset class="fieldset">
+           <label for" Security code">Security code</label>
+           <input type"text" id="securitycode" class="input">
+		</fieldset>
+
+        <fieldset class="fieldset">
+           <label for="Name on Card number">Name on card</label>
+           <input type="text" id="nameOnCard" class="input" placeholder="exact name as on the card">
+        </fieldset>
+
+        <fieldset>
+           <button type="submit" class="buy" align="center">BUY IT!</button>
+           </fieldset>
+     </form>
+
+</body>
+</html>
